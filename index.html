@@ -67,8 +67,8 @@
                     <div class="me-3 pe-3 border-end py-2">
                         <select id="languageSelector" class="form-select bg-primary text-white border-0"
                             onchange="changeLanguage(this.value)">
-                            <option value="en">English</option>
                             <option value="vi">Tiếng Việt</option>
+                            <option value="en">English</option>
                         </select>
                     </div>
                     <div class="me-3 pe-3 border-end py-2">
@@ -785,9 +785,7 @@
     <!-- Add before closing body tag -->
     <script src="js/translate.js"></script>
     <script>
-        // Set initial language based on browser preference
-        const userLang = navigator.language || navigator.userLanguage;
-        const initialLang = userLang.startsWith('vi') ? 'vi' : 'en';
+        const initialLang = 'vi';
         document.getElementById('languageSelector').value = initialLang;
         changeLanguage(initialLang);
     </script>

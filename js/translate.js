@@ -15,19 +15,19 @@ const translations = {
       testimonial: "Testimonial"
   },
   vi: {
-      home: "Trang chủ",
-      about: "Giới thiệu",
+      home: "Trang Chủ",
+      about: "Giới Thiệu",
       service: "Dịch vụ",
-      pages: "Trang",
-      contact: "Liên hệ",
-      appointment: "Đặt lịch hẹn",
+      pages: "Thư Viện",
+      contact: "Liên Hệ",
+      appointment: "Đặt Lịch Hẹn",
       openingHours: "Giờ mở cửa: Thứ 2 - Thứ 3: 6:00 sáng - 10:00 tối, Chủ nhật đóng cửa",
       keepTeethHealthy: "Giữ Răng Khỏe Mạnh",
       qualityTreatment: "Nhận Điều Trị Nha Khoa Chất Lượng Tốt Nhất",
       contactUs: "Liên Hệ",
-      pricingPlan: "Bảng Giá",
-      ourDentist: "Nha Sĩ",
-      testimonial: "Đánh Giá"
+      pricingPlan: "Bảng Giá Dịch Vụ",
+      ourDentist: "Đội Ngũ Nha Sĩ",
+      testimonial: "Đánh Giá Dịch Vụ"
   }
 };
 
@@ -52,7 +52,7 @@ function changeLanguage(lang) {
   document.querySelector('.btn.btn-primary.py-2.px-4.ms-3').textContent = translations[lang].appointment;
   
   // Update opening hours
-  document.querySelector('.py-2 small').textContent = translations[lang].openingHours;
+  document.querySelector('.py-2').textContent = translations[lang].openingHours;
   
   // Update carousel content
   document.querySelectorAll('.text-uppercase.mb-3').forEach(element => {
